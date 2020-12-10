@@ -107,6 +107,7 @@ public class Frame extends javax.swing.JFrame {
 
         mFile.setText("File");
 
+        mOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         mOpen.setText("Open Folder");
         mOpen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +120,7 @@ public class Frame extends javax.swing.JFrame {
 
         mZip.setText("Zip");
 
+        mToZip.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         mToZip.setText("Add to zip");
         mToZip.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
