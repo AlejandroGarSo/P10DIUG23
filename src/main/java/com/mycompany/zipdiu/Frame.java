@@ -28,7 +28,6 @@ public class Frame extends javax.swing.JFrame {
         fileList.setModel(fileModel);
         fileList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        System.out.println(fileList.getSize());
     }
 
     /**
@@ -200,7 +199,6 @@ public class Frame extends javax.swing.JFrame {
                             files.add(path + File.separator + filename);
                         }
                         String zipName = fc.getSelectedFile()+".zip";
-                        System.out.println(zipName);
                         new BarFrame(zipName, files).setVisible(true);
                     }
                 }
